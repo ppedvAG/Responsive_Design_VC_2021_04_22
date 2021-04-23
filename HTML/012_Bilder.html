@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder</title>
+    <style>
+        
+
+        .float-container::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .img-container {
+            /* border: 2px solid red; */
+            width: 25%;
+            /* height: 200px; */
+            /* nur eine Größe angeben ENTWEDER Höhe ODER Breite */
+            padding: 15px;
+            /* background-color: red; */
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .img-container>img {
+            display: block;
+            width: 100%;
+            /* height: 100%; */
+        }
+
+        .picture-container-1 {
+            width: 50%;
+            /* border: 2px solid red; */
+            margin: 0 auto;
+        }
+
+        .picture-container-1 img {
+            display: block;
+            width: 100%;
+        }
+
+        .middle-demo {
+            border: 2px solid red;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <img src="../images/cat01.jpg" alt="sleeping cat">
+
+    <div class="float-container">
+        <div class="img-container">
+            <img src="../images/cat01.jpg" alt="cat">
+        </div>
+        <div class="img-container">
+            <img src="../images/cat01.jpg" alt="cat">
+        </div>
+        <div class="img-container">
+            <img src="../images/cat01.jpg" alt="cat">
+        </div>
+        <div class="img-container">
+            <img src="../images/cat01.jpg" alt="cat">
+        </div>
+    </div>
+
+    <div class="picture-container-1">
+        <picture>
+            <source srcset="../images/grasshouse_small.jpg" media="(max-width: 600px)">
+            <source srcset="../images/grasshouse_medium.jpg" media="(max-width: 1000px)">
+            <source srcset="../images/grasshouse_big.jpg" media="(max-width: 1200px)">
+            <img src="../images/grasshouse.jpg" alt="grasshouse">
+        </picture>
+    </div>
+    <p>Das ist ein schönes Bild.</p>
+
+
+    <div class="picture-container-1">
+        <figure>
+            <picture>
+                <source srcset="../images/grasshouse_small.jpg" media="(max-width: 600px)">
+                <source srcset="../images/grasshouse_medium.jpg" media="(max-width: 1000px)">
+                <source srcset="../images/grasshouse_big.jpg" media="(max-width: 1200px)">
+                <img src="../images/grasshouse.jpg" alt="grasshouse">
+            </picture>
+            <figcaption>Das ist ein schönes Bild.</figcaption>
+        </figure>
+    </div>
+
+    <picture>
+        <source srcset="../images/grasshouse_small.jpg" media="(max-width: 600px)">
+        <source srcset="../images/grasshouse_medium.jpg" media="(max-width: 1000px)">
+        <source srcset="../images/grasshouse_big.jpg" media="(max-width: 1200px)">
+        <img src="../images/grasshouse.jpg" alt="grasshouse">
+    </picture>
+
+
+    <div class="middle-demo">
+        <input type="text">
+    </div>
+
+</body>
+
+</html>

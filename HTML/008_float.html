@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        .float-container {
+            background-color: turquoise;
+            /* border: 10px solid aqua; */
+            padding: 20px;
+        }
+
+        .float-container::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .float-item {
+            width: 150px;
+            height: 150px;
+            border: 2px solid rgb(0, 78, 71);
+            background-color: rgb(228, 255, 252);
+            float: left;
+            margin: 10px;
+        }
+
+        /* 
+        .clearboth{
+            clear: both;
+        }
+        */
+
+        .inline-container {
+            background-color: darkorange;
+            /* border: 10px solid aqua; */
+        }
+
+        .inline-item {
+            width: 150px;
+            height: 150px;
+            border: 2px solid rgb(105, 58, 1);
+            background-color: rgb(247, 209, 164);
+            display: inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="float-container">
+        <div class="float-item"></div>
+        <div class="float-item"></div>
+        <div class="float-item"></div>
+        <div class="float-item"></div>
+        <div class="float-item"></div>
+        <div class="float-item"></div>
+        <div class="float-item"></div>
+        <div class="float-item"></div>
+        <div class="float-item"></div>
+        <!-- <div class="clearboth"></div> -->
+    </div>
+
+    <div class="inline-container">
+        <div class="inline-item"></div>
+        <div class="inline-item"></div>
+        <div class="inline-item"></div>
+        <div class="inline-item"></div>
+        <div class="inline-item"></div>
+        <div class="inline-item"></div>
+        <div class="inline-item"></div>
+        <div class="inline-item"></div>
+        <div class="inline-item"></div>
+    </div>
+
+    <div class="float-container">
+        <div class="float-item"></div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias debitis, unde maiores eius quaerat pariatur
+        officiis ipsa eum consequatur et praesentium in dicta, aut commodi natus vitae, earum atque suscipit veritatis!
+        Hic quidem, corporis quaerat nulla minima fugiat, quae dolores rerum, tenetur ratione odio nostrum eveniet quas
+        unde voluptatibus sed deleniti non. Porro perspiciatis sint corporis, molestiae inventore assumenda nesciunt
+        nihil quis ducimus doloremque repellendus aut sit ipsum neque quaerat ad dolor consequuntur repellat possimus
+        aliquid hic officia, nemo dicta? Accusantium adipisci distinctio dolor beatae eaque aperiam voluptatibus, quidem
+        quam harum, necessitatibus atque nobis fugit tempora alias nesciunt laboriosam quasi. Minima magni, sapiente
+        eveniet illum nemo, rem commodi, adipisci sequi est iste optio veniam pariatur eius ducimus quo recusandae id
+        culpa? Corporis sint reiciendis iure, fugiat quas ipsum ducimus itaque perferendis placeat, commodi debitis
+        ratione voluptatem unde, non natus molestiae quam enim hic error soluta minus illum ad velit! Labore, suscipit
+        ab. Aperiam perspiciatis, necessitatibus sunt saepe laudantium asperiores vitae atque dicta exercitationem
+        corporis reiciendis eveniet sequi quae iure laboriosam laborum consectetur repudiandae! Eaque neque deserunt
+        vero perspiciatis, ab nesciunt culpa consectetur. Vero, facere natus cupiditate aliquam temporibus minima et
+        dolorem optio, blanditiis rem repudiandae consectetur est praesentium rerum error tenetur accusantium omnis
+        aperiam labore iure asperiores ad odio voluptatem. Dolores accusantium quod iure at, numquam tenetur distinctio
+        obcaecati debitis saepe esse mollitia nesciunt! Ea consectetur accusantium quae quos magni, distinctio
+        laboriosam possimus, nobis natus, assumenda quod eaque. Dolorem saepe error pariatur? Ratione laborum enim
+        expedita magni eveniet, architecto, beatae consequuntur dolor quaerat, dolore deserunt atque non natus quas
+        numquam exercitationem illo dolores cumque optio quo facere nulla laudantium nihil! Cupiditate deserunt possimus
+        expedita tenetur earum molestiae necessitatibus totam recusandae quae modi! Ullam, ratione aut natus quae
+        eligendi tenetur laboriosam deserunt voluptates blanditiis, autem velit facere. Inventore ratione cumque
+        veritatis.
+    </div>
+
+</body>
+
+</html>

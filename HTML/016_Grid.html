@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 20% repeat(2, auto) 200px;
+            grid-template-rows: 20vh 100px auto 10vh;
+            /* height: 100vh; */
+        }
+
+        .grid-item-01 {
+            background-color: lawngreen;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+
+        .grid-item-02 {
+            background-color: rgb(189, 255, 124);
+            grid-column: 1/2;
+            grid-row: 2/5;
+        }
+
+
+        .grid-item-03 {
+            background-color: rgb(58, 116, 0);
+            grid-column: 2/4;
+            grid-row: 2/4;
+        }
+
+
+        .grid-item-04 {
+            background-color: rgb(226, 252, 200);
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+
+
+        .grid-item-05 {
+            background-color: rgb(45, 90, 0);
+            grid-column: 2/5;
+            grid-row: 4/5;
+        }
+
+        .flex-container{
+            display: flex;
+        }
+
+        .flex-item{
+            padding: 2rem;
+        }
+        .text-block-container{
+    /* background-color: olive; */
+    padding: 1em;
+}
+
+.text-block-container::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.text-block{
+    /* border: 2px solid rgb(56, 56, 0); */
+    padding: 1em;
+    width: 33.3333%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.text-box{
+    /* border: 2px solid rgb(252, 252, 185); */
+    padding: 1em;
+}
+
+.flex-container{
+    display: flex;
+    padding: 1em;
+}
+
+.flex-item-2{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 2em;
+    border-left: 4px solid #002552;
+}
+
+.flex-item-4{
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.img-box{
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.img-box>img{
+    display: block;
+    width: 100%;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item-01"></div>
+        <div class="grid-item-02"></div>
+        <div class="grid-item-03">
+            <div class="flex-container">
+                <div class="flex-item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque officia sit excepturi. Ut optio
+                    totam quibusdam aspernatur facere voluptatibus quod, quam possimus! A aspernatur temporibus dicta,
+                    tempore consectetur similique. Nobis hic ratione quaerat eligendi laborum veniam modi dolor fuga
+                    architecto aspernatur asperiores, incidunt, fugit ipsa recusandae. Voluptas quos ipsam veniam?
+                </div>
+                <div class="flex-item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque officia sit excepturi. Ut optio
+                    totam quibusdam aspernatur facere voluptatibus quod, quam possimus! A aspernatur temporibus dicta,
+                    tempore consectetur similique. Nobis hic ratione quaerat eligendi laborum veniam modi dolor fuga
+                    architecto aspernatur asperiores, incidunt, fugit ipsa recusandae. Voluptas quos ipsam veniam?
+                </div>
+                <div class="flex-item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque officia sit excepturi. Ut optio
+                    totam quibusdam aspernatur facere voluptatibus quod, quam possimus! A aspernatur temporibus dicta,
+                    tempore consectetur similique. Nobis hic ratione quaerat eligendi laborum veniam modi dolor fuga
+                    architecto aspernatur asperiores, incidunt, fugit ipsa recusandae. Voluptas quos ipsam veniam?
+                </div>
+            </div>
+
+            <div class="text-block-container">
+                <div class="text-block">
+                    <div class="text-box">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ducimus placeat quod.
+                        Commodi at similique ea, accusantium et qui corrupti molestias? Doloremque nesciunt aut deleniti
+                        illo? Aut cum vero fuga repellat sint voluptatibus obcaecati tempora, corporis mollitia odio
+                        impedit. Similique rem, nulla unde quaerat laudantium commodi nobis excepturi perferendis
+                        obcaecati enim corrupti iste rerum veritatis voluptate, dicta illum vel corporis officiis ea
+                        amet? Id corrupti incidunt minus earum pariatur nihil nulla, quis nostrum quos, iure quae
+                        laboriosam nesciunt accusamus eum distinctio beatae dolorem velit blanditiis accusantium animi
+                        perferendis cupiditate non.
+                    </div>
+                </div>
+                <div class="text-block">
+                    <div class="text-box">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ducimus placeat quod.
+                        Commodi at similique ea, accusantium et qui corrupti molestias? Doloremque nesciunt aut deleniti
+                        illo? Aut cum vero fuga repellat sint voluptatibus obcaecati tempora, corporis mollitia odio
+                        impedit. Similique rem, nulla unde quaerat laudantium commodi nobis excepturi perferendis
+                        obcaecati enim corrupti iste rerum veritatis voluptate, dicta illum vel corporis officiis ea
+                        amet? Id corrupti incidunt minus earum pariatur nihil nulla, quis nostrum quos, iure quae
+                        laboriosam nesciunt accusamus eum distinctio beatae dolorem velit blanditiis accusantium animi
+                        perferendis cupiditate non.
+                    </div>
+                </div>
+                <div class="text-block">
+                    <div class="text-box">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ducimus placeat quod.
+                        Commodi at similique ea, accusantium et qui corrupti molestias? Doloremque nesciunt aut deleniti
+                        illo? Aut cum vero fuga repellat sint voluptatibus obcaecati tempora, corporis mollitia odio
+                        impedit. Similique rem, nulla unde quaerat laudantium commodi nobis excepturi perferendis
+                        obcaecati enim corrupti iste rerum veritatis voluptate, dicta illum vel corporis officiis ea
+                        amet? Id corrupti incidunt minus earum pariatur nihil nulla, quis nostrum quos, iure quae
+                        laboriosam nesciunt accusamus eum distinctio beatae dolorem velit blanditiis accusantium animi
+                        perferendis cupiditate non.
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <article class="flex-item-2">
+                    <h3>Überschrift</h3>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis minus iste id reiciendis eius
+                    corporis quae dicta sint accusamus nostrum autem nam nobis similique, corrupti blanditiis voluptatum
+                    deserunt at? Corrupti, reprehenderit excepturi necessitatibus cumque laborum, dolor voluptatum illo
+                    mollitia, tempore quisquam alias eligendi ad adipisci illum fugit magni cum quos aut repellendus qui
+                    veritatis nulla quod distinctio repellat. Vel illo ipsam error ipsa reiciendis libero nam amet ipsum
+                    similique aperiam dignissimos ratione impedit, praesentium consectetur unde iste ad voluptate sunt
+                    aliquam quas? Possimus ipsa repudiandae magni optio voluptates. Ratione vitae aliquam neque fugiat
+                    quisquam sapiente assumenda quam distinctio nobis eveniet?
+                </article>
+                <article class="flex-item-2">
+                    <h3>Überschrift</h3>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium similique ullam eligendi amet
+                    sit illum iste neque commodi nihil. Corporis, doloremque consequuntur reprehenderit maxime adipisci
+                    minima, praesentium beatae quidem, quo tempore quibusdam itaque earum quas! Debitis perferendis,
+                    corrupti possimus molestiae, excepturi aliquid natus voluptatum animi iste quasi ea explicabo
+                    assumenda? Ipsa culpa earum eius odio suscipit dolores esse quidem tenetur rem sequi inventore
+                    officiis non quasi molestiae dolore modi asperiores, rerum consectetur corrupti eveniet dolorem eum,
+                    facilis beatae. Exercitationem facere qui architecto sapiente quaerat autem suscipit possimus
+                    dolores, nostrum officia quidem veniam aliquid est adipisci quas sed enim earum ipsum!
+                </article>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item-4">
+                    <div class="img-box">
+                        <img src="../images/lake.jpg" alt="lake">
+                    </div>
+                </div>
+                <div class="flex-item-4">
+                    <div class="img-box">
+                        <img src="../images/san-francisco.jpg" alt="san-francisco">
+                    </div>
+                </div>
+                <div class="flex-item-4">
+                    <div class="img-box">
+                        <img src="../images/sea.jpg" alt="sea">
+                    </div>
+                </div>
+                <div class="flex-item-4">
+                    <div class="img-box">
+                        <img src="../images/canyon.jpg" alt="canyon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-04"></div>
+        <div class="grid-item-05"></div>
+    </div>
+
+
+</body>
+
+</html>

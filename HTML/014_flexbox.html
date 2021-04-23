@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .flex-container {
+            background-color: greenyellow;
+            display: flex;
+            /* 
+            flex-direction: row;
+            */
+            flex-wrap: wrap;
+            
+            /* shorthand property flex-flow = Kombination
+                aus flex-direction und flex-wrap */
+            /* flex-flow: row wrap; */
+
+            justify-content: center;
+            /* horizontale Ausrichtung */
+            align-items: center;
+            /* vertikale Ausrichtung */
+            /* ohne fixe Höhe sinnlos */
+            height: 100vh;
+
+        }
+
+        .flex-item {
+            width: 150px;
+            height: 150px;
+            border: 2px solid rgb(84, 129, 16);
+            background-color: rgb(221, 243, 189);
+            /*  margin: 10px; */
+        }
+
+        .flexdemo{
+            align-self: flex-start;
+        }
+
+        .demo01 {
+            width: 300px;
+            border: 2px solid rgb(84, 129, 16);
+            /* background-color: rgb(221, 243, 189); */
+            padding: 20px;
+        }
+
+        .demo01>img {
+            width: 100%;
+            display: block;
+        }
+
+        .demo02{
+            width: 300px;
+            height: 300px;
+            border: 2px solid rgb(84, 129, 16);
+            background-color: rgb(221, 243, 189);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-container-w{
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+
+        
+        .img-container-h{
+            height: 100%;
+            /* border: 1px solid red; */
+        }
+
+        .img-container-w>img{
+            display: block;
+            width: 100%;
+        }
+
+        
+        .img-container-h>img{
+            display: block;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">01</div>
+        <div class="flex-item">02</div>
+        <div class="flex-item">03</div>
+        <div class="flex-item">04</div>
+        <div class="flex-item">05</div>
+        <div class="flex-item">06</div>
+        <div class="flex-item">07</div>
+        <div class="flex-item">08</div>
+        <div class="flex-item">09</div>
+        <!-- 
+        <div class="demo01">
+            <img src="../images/canyon.jpg" alt="canyon">
+        </div>
+         -->
+<!-- 
+        <div class="demo02">
+            <div class="img-container-h">
+                <img src="../images/cat01.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class="demo02">
+            <div class="img-container-w">
+                <img src="../images/canyon.jpg" alt="">
+            </div>
+        </div>
+    </div>
+ -->
+</body>
+
+</html>

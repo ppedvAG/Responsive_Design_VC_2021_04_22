@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG Grafiken</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        svg {
+            width: 450px;
+            height: 260px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Kreis -->
+        <svg>
+            <circle cx="225" cy="130" r="70" stroke="#ff420e" stroke-width="4" fill="#00CED1" /> Leider unterstützt Ihr Browser kein SVG!
+        </svg>
+
+        <!-- Rechtecke -->
+        <svg>
+            <rect width="100" height="100" x="15" y="15" fill="yellow" stroke="purple" stroke-width="4" />
+            <rect width="100" height="100" x="55" y="55" fill="purple" stroke="yellow" stroke-width="4" />
+            <text x="15" y="230" fill="purple" style="font-size:1.3em; 
+                    font-family: Verdana, sans-serif; 
+                    text-shadow: 0.1em 0.1em 0.4em black;
+                    font-weight: bold;" stroke="yellow">Diese Quadrate sind super!</text>
+            Leider unterstützt Ihr Browser kein SVG!
+        </svg>
+
+        <!-- Ellipsen -->
+        <svg>
+            <ellipse cx="225" cy="195" rx="210" ry="50" fill="#2e4600" stroke="yellow" stroke-width="1"  />
+            <ellipse cx="205" cy="135" rx="180" ry="40" fill="#486b00" stroke="yellow" stroke-width="1" />
+            <ellipse cx="195" cy="70" rx="160" ry="35" fill="#a2c523" stroke="yellow" stroke-width="1" /> Leider unterstützt Ihr Browser kein SVG!
+        </svg>
+    </div>
+</body>
+
+</html>

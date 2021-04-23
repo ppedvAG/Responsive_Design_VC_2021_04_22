@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Größenangaben</title>
+    <style>
+        /* IMMER, wenn wir mit em oder rem arbeiten: Referenzwert setzen!!! */
+        /* sonst orientieren wir uns an den Browser- bzw. User-Settings! */
+        :root{
+            font-size: 20px;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        div{
+            height: 100px;
+            margin-bottom: 5px;
+        }
+
+        .demo01{
+            background-color: darkblue;
+            width: 400px;
+        }
+
+        
+        .demo02{
+            font-size: 24px;
+            background-color: rgb(87, 87, 218);
+            width: 20em;
+        }
+
+        .demo03{
+            font-size: 40px;
+            background-color: rgb(171, 171, 241);
+            width: 20rem;
+        }
+
+        .demo04{
+            background-color: rgb(115, 115, 168);
+            width: 100%;
+            /* height: 50%; */ /* funktioniert hier NICHT! */
+        }
+
+        .demo05{
+            background-color: rgb(122, 122, 255);
+            /* width: 100vw; */ /* viewport-width */
+            /* width in vw macht nicht so viel Sinn, da der Scrollbalken nicht
+               mitberücksichtigt wird (die Seite wird breiter, als der Viewport) */
+            width: 100%;
+            font-size: 8vw;
+            height: unset;
+        }
+
+        
+        .demo06{
+            background-color: rgb(157, 157, 219);
+            /* width: 100vh; */ /* viewport-height */
+            /* macht nicht viel Sinn für die Breite */
+
+            /* macht Sinn für Höhe */
+            height: 100vh;
+        }
+
+        .container{
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+            margin: 50px;
+        }
+
+        .inner{
+            background-color: yellowgreen;
+            width: 100%;
+            height: 100%; /* wenn der übergeordnete Container eine fixe Höhe hat
+                             hier: 300px, dann dürfen wir auch die Höhe in
+                             % angeben */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="demo01">Das ist eine px Demo.</div>
+    <div class="demo02">Das ist eine em Demo.</div>
+    <div class="demo03">Das ist eine rem Demo.</div>
+    <div class="demo04">Das ist eine % Demo.</div>
+    <div class="demo05">Das ist eine vw Demo.</div>
+    <div class="demo06">Das ist eine vh Demo.</div>
+
+    <div class="container">
+        <div class="inner"></div>
+    </div>
+
+    
+</body>
+</html>

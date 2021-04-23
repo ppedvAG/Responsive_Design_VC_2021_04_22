@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektoren</title>
+    <style>
+        /* Typ-Selektor */
+        p {
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+            color: black;
+        }
+
+        /* Klassen-Selektor */
+        .demo-class {
+            color: blue;
+        }
+
+        .demo-class-1 {
+            color: red;
+        }
+
+        .demo-class-2 {
+            font-style: italic;
+        }
+
+        /* ID-Selektor */
+        #demo-id {
+            color: gold;
+        }
+
+        #demo-id-1 {
+            font-weight: bold;
+        }
+
+        /* Attributselektoren */
+
+        /* hat Attribut: */
+        a[target] {
+            text-decoration: none;
+        }
+
+        /* bestimmter Wert */
+        a[target="_blank"] {
+            color: aqua;
+        }
+
+        /* soll beginnen mit... */
+        /* .demo01, .demo02, .demo03, ... */
+
+        div[class^="demo"] {
+            border: 2px solid green;
+        }
+
+        a[url="https"]{
+            text-decoration: none;
+        }
+
+        /* soll enden mit... */
+        /* .img-container, .txt-container, .... */
+        div[class$="container"] {
+            margin: 1em 0;
+        }
+
+
+        /* soll Zeichenfolge enthalten */
+        div[class*="container"] {
+            /* Styling */
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+
+    <p>Das ist Paragraph Nr. 1.</p>
+    <p>Das ist Paragraph Nr. 2.</p>
+    <p>Das ist Paragraph Nr. 3.</p>
+    <p class="demo-class-1">Das ist Paragraph Nr. 4.</p>
+    <p class="demo-class-1">Das ist Paragraph Nr. 5.</p>
+    <p>Das ist Paragraph Nr. 6.</p>
+    <p class="demo-class-2">Das ist Paragraph Nr. 7.</p>
+    <p class="demo-class-1">Das ist Paragraph Nr. 8.</p>
+    <p id="demo-id-1">Das ist Paragraph Nr. 9.</p>
+    <p id="demo-id" class="demo-class">Das ist Paragraph Nr. 10.</p>
+    <p>Das ist ein <a href="https://en.wikipedia.org/wiki/Paragraph" target="_blank">Paragraph.</a> </p>
+</body>
+
+</html>

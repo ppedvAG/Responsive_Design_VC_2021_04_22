@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoklassen und -elemente</title>
+    <style>
+
+        a{
+            text-decoration: none;
+        }
+
+        /* Pseudoelemente */
+        div{
+            border: 1px solid green;
+        }
+
+        /* div::before{
+            display: block;
+            content: '❁';
+            border-top: 5px solid cyan;
+        } */
+
+        div::first-letter{
+            font-family: 'Parchment', sans-serif;
+            font-size: 44px;
+        }
+        
+        
+        /* Pseudoklassen */
+        /* Beispiel: Link-Zustände */
+
+        /* Reihenfolge beachten: */
+        /* LoVe/HAte */
+        a:link{
+            color: aqua;
+        }
+
+        a:visited{
+            color: blueviolet;
+        } 
+
+        a:hover{
+            color: gold;
+        }
+
+        a:active{
+            color: lawngreen;
+        }
+
+        
+
+        /* ******************************************************* */
+
+        /* den 3. Paragraphen auswählen */
+        /* p:nth-child(3){
+            color: red;
+        } */
+
+        /* den jeweils 3. Paragraphen auswählen */
+        /* p:nth-child(3n){
+            color: red;
+        } */
+
+        /* den jeweils 3., beginnend beim 1. */
+        /* p:nth-child(3n+1){
+            color: red;
+        } */
+
+        /* alle ungeraden auswählen */
+        p:nth-child(odd){
+            color: red;
+        }
+
+        /* alle geraden auswählen */
+        p:nth-child(even){
+            color: gold;
+        }
+
+
+        p:nth-of-type(odd){
+            font-style: italic;
+        }
+
+
+        .demo{
+            width: 50px;
+            height: 50px;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <p>Das ist Paragraph Nr. 1</p>
+    <p>Das ist Paragraph Nr. 2</p>
+    <p>Das ist Paragraph Nr. 3</p>
+    <p>Das ist Paragraph Nr. 4</p>
+    <div class="demo"></div>
+    <p>Das ist Paragraph Nr. 5</p>
+    <p>Das ist Paragraph Nr. 6</p>
+    <p>Das ist Paragraph Nr. 7</p>
+    <p>Das ist Paragraph Nr. 8</p>
+    <p>Das ist Paragraph Nr. 9</p>
+    <p>Das ist Paragraph Nr. 10</p>
+    <a href="#">Mein toller Link.</a>
+
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, iusto!
+    </div>
+
+    
+</body>
+</html>

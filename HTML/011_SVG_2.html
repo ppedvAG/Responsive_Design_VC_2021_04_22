@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+</head>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            font-size: 1.2em;
+        }
+
+        h1{
+            margin-left: 0.5em;
+        }
+
+        p{
+            text-align: center;
+            margin-bottom: 4em;
+            
+        }
+
+        #flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .svg-box {
+            box-sizing: border-box;
+            width: 25%;
+            text-align: center;
+        }
+
+        .text-box {
+            font-size: 1em;
+            margin: 1em 1em 0;
+        }
+
+        .text-border-box:not(.last) {
+            border-right: medium solid green;
+        }
+
+        /* .text-box:not(.last) {
+            border-right: medium solid green;
+        } */
+
+        .greenrect {
+            fill: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Verschiedene Methoden, um ein SVG zu füllen</h1>
+        <p> (siehe Code!)</p>
+    </header>
+
+    <div id="flex-container">
+        <div class="svg-box">
+            <svg width="150px" height="150px">
+                <!-- Kein fill -per default wird dann mit black gefüllt (#000000) -->
+                <rect id="demo1" height="100%" width="100%"></rect>
+                <!-- <rect id="demo1" height="30px" width="30px" fill="red"></rect> -->
+            </svg>
+            <div class="text-border-box">
+                <div class="text-box">
+                    Ohne
+                    <code>fill</code>-Angabe; per Default wird dann mit
+                    <code>black</code> (#000000) gefüllt.
+                </div>
+            </div>
+
+        </div>
+        <div class="svg-box">
+            <svg width="150px" height="150px">
+                <!-- Mittels Klasse:  class="greenrect" -->
+                <rect id="demo2" height="100%" width="100%" class="greenrect" />
+            </svg>
+            <div class="text-border-box">
+                <div class="text-box">
+                    Füllen mittels einer Klasse - das <code>fill</code> kann auch im CSS definiert werden.
+                </div>
+            </div>
+        </div>
+
+        <div class="svg-box">
+            <svg width="150px" height="150px">
+                <!-- Mittels Style: style="fill:blue" -->
+                <rect id="demo3" height="100%" width="100%" style="fill:blue" />
+            </svg>
+            <div class="text-border-box">
+                <div class="text-box">
+                    Inline kann <code>fill</code> über <code>style="fill:blue"</code> definiert werden.
+                </div>
+            </div>
+        </div>
+
+        <div class="svg-box">
+            <svg width="150px" height="150px">
+                <!-- Mittels Attribut:  fill="red" -->
+                <rect id="demo4" height="100%" width="100%" fill="red" />
+            </svg>
+            <div class="text-border-box last">
+                <div class="text-box last">
+                    Mittels des Attributes <code>fill</code> kann die Füllfarbe inline definiert werden.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

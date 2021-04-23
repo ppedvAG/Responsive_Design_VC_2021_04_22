@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Column Layout</title>
+    <style>
+        :root{
+            font-size: 20px;
+        }
+        body{
+            margin: 0;
+        }
+
+        .demo{
+           width: 70%;
+           /* height: 500px; */
+           margin: 2rem auto;
+           padding: 2rem;
+           background-color: rgb(194, 194, 194);
+           column-count: 3;
+           column-gap: 3rem;
+           column-rule: 10px dotted grey;
+           text-align: justify;
+        }
+
+        .demo>h2{
+            column-span: all;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <h2>Ganz tolle, seeeeeeh laaaaaaange Überschrift</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsam omnis dolor pariatur, repellat
+        reprehenderit temporibus, veniam, modi eligendi molestias tempora ex ut! Molestias culpa eos inventore harum
+        velit iure itaque est fugit ullam non, officiis necessitatibus illo corporis similique vero accusamus
+        repellendus distinctio porro quis quisquam facere! Harum praesentium provident autem dolores, rem molestiae
+        quisquam quae distinctio repellendus aliquam ea nisi asperiores, aperiam illo dolor aspernatur voluptatibus vero
+        deleniti accusamus. Est ut culpa sunt assumenda vel laboriosam sit quas porro cupiditate necessitatibus aliquid
+        totam officia nisi voluptates nam voluptas, laudantium, enim sed corporis eveniet molestias aliquam? Consequatur
+        doloribus voluptatem optio labore recusandae ipsum nobis. Unde harum accusantium ab quos placeat porro culpa
+        neque, atque ex eius nostrum, optio veritatis. Dolor, illo ea quasi at nostrum, cupiditate ducimus unde ipsa,
+        amet molestias accusantium et necessitatibus repellat quo cumque? Veniam, repellendus iure. Voluptatibus veniam
+        earum eaque. Dicta eaque fuga, magnam optio aperiam alias culpa vero impedit repellat, excepturi ipsum provident
+        ratione nostrum amet rerum ab incidunt velit illum labore explicabo odio libero tempora? Ullam at velit
+        excepturi corrupti beatae ex voluptates. Inventore, tempore quas quo voluptates accusamus pariatur incidunt
+        fugit quasi delectus nihil reiciendis voluptatibus impedit asperiores minus natus, harum error.
+    </div>
+</body>
+
+</html>

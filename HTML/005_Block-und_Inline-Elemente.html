@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block- und Inline-Elemente</title>
+    <style>
+        .lbl-inp-container {
+            margin-bottom: 1em;
+        }
+
+        .inline-demo {
+            /* display: inline;  */
+            /* ist hier schon vordefiniert! */
+            width: 100px;
+            /* funktioniert NICHT mit display: inline; */
+            background-color: cyan;
+        }
+
+        .block-demo {
+            display: block;
+            width: 100px;
+            background-color: cyan;
+        }
+
+        .inline-block-demo {
+            display: inline-block;
+            width: 100px;
+            background-color: cyan;
+        }
+
+        .img-container{
+            border: 2px solid red;
+            width: 300px;
+            /* height: 100px; */
+        }
+
+        .img-container>img{
+            display: block;
+            width: 100%;
+            /* height: 100%; */
+            /* nur Breite ODER Höhe angeben, damit aspect-ratio beibehalten wird */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Inline-Demo</h1>
+    <div class="lbl-inp-container">
+        <label for="" class="inline-demo">Vorname:</label>
+        <input type="text">
+    </div>
+    <div class="lbl-inp-container">
+        <label for="" class="inline-demo">Nachname:</label>
+        <input type="text">
+    </div>
+
+    <h1>Block-Demo</h1>
+    <div class="lbl-inp-container">
+        <label for="" class="block-demo">Vorname:</label>
+        <input type="text">
+    </div>
+    <div class="lbl-inp-container">
+        <label for="" class="block-demo">Nachname:</label>
+        <input type="text">
+    </div>
+
+    <h1>Inline-Block-Demo</h1>
+    <div class="lbl-inp-container">
+        <label for="" class="inline-block-demo">Vorname:</label>
+        <input type="text">
+    </div>
+    <div class="lbl-inp-container">
+        <label for="" class="inline-block-demo">Nachname:</label>
+        <input type="text">
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <!-- beliebige Anzahl an Returns, Tabs und Leerzeichen im Editor
+            wird als 1 Leerzeichen interpretiert -->
+
+        Cum, velit? Necessitatibus tempora, omnis assumenda, culpa
+        molestiae impedit, modi quia distinctio nobis incidunt excepturi
+        vitae fugit possimus quam libero. Beatae ut fugiat voluptate
+        magnam molestiae commodi libero optio ipsum esse. Distinctio
+        voluptate quia sint, libero maiores minus cupiditate enim
+        consequatur voluptatem, praesentium dolore explicabo odit,
+        inventore adipisci dicta eaque illo corrupti velit ab vero
+        placeat optio excepturi? Aliquam, debitis? Commodi nemo
+        similique nam, vitae praesentium nulla nisi provident
+        exercitationem facilis maiores earum corrupti dolorem
+        optio, qui voluptatum molestiae ad hic a quis odit voluptas
+        amet totam. Cupiditate magni harum maiores optio.
+    </p>
+
+    <div class="img-container">
+        <img src="../images/cat01.jpg" alt="cat">
+    </div>
+
+
+
+    <!-- <img src="../images/cat01.jpg" alt="cat"> -->
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombinatoren</title>
+    <style>
+
+        /* Nachfahren-Kombinator (descendant selector) */
+        div p{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        div span{
+            font-family: 'Bauhaus 93', fantasy;
+        }
+
+        /* Kind-Kombinator (child selector) */
+        div>p{
+            font-style: italic;
+        }
+
+        div>span{
+            color: aqua;
+        }
+
+        /* Geschwister-Kombinatoren (sibling selector) */
+        /* benachbarte Geschwister-Kombinatoren */
+        h1+p{
+            font-size: 20px;
+        }
+
+        /* allgemeiner Geschwister-Kombinator */
+        h1~p{
+            color: chartreuse;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Das ist eine Überschrift</h1>
+    <p>Das ist eine Unterüberschrift.</p>
+    <div>
+        <span>Das ist eine Span in einem Div.</span>
+        <p>Das ist Paragraph Nr. 01</p>
+        <p>Das ist Paragraph Nr. 02</p>
+        <div>
+            <p>
+                Das ist ein Paragraph in einem Div.
+                <span>Das ist eine Span in einem p.</span>
+            </p>
+        </div>
+    </div>
+    
+    <h1>Das ist eine Überschrift</h1>
+    <p>Das ist eine Unterüberschrift.</p>
+
+
+    <h1>Das ist eine Überschrift</h1>
+    <div>
+        <p>Paragraph in Div</p>
+    </div>
+    <p>Das ist Paragraph Nr. 03</p>
+    <p>Das ist Paragraph Nr. 04</p>
+    <p>Das ist Paragraph Nr. 05</p>
+    <p>Das ist Paragraph Nr. 06</p>
+    <p>Das ist Paragraph Nr. 07</p>
+    <p>Das ist Paragraph Nr. 08</p>
+    <p>Das ist Paragraph Nr. 09</p>
+    <p>Das ist Paragraph Nr. 10</p>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodell</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            /* margin-bottom: 5px; */
+            font-size: 44px;
+        }
+
+        .demo01 {
+            background-color: teal;
+        }
+
+
+        .demo02 {
+            background-color: rgb(37, 165, 165);
+            padding: 50px;
+        }
+
+
+        .demo03 {
+            background-color: rgb(107, 207, 207);
+            padding: 50px;
+            border: 10px solid rgb(1, 80, 80);
+        }
+
+
+        .demo04 {
+            background-color: rgb(148, 226, 226);
+        }
+
+
+        .demo05 {
+            background-color: rgb(206, 250, 250);
+            padding: 50px;
+            border: 10px solid rgb(1, 80, 80);
+            box-sizing: border-box;
+        }
+
+        .demo06 {
+            background-color: rgb(189, 190, 190);
+            padding: 50px;
+            border: 10px solid rgb(1, 80, 80);
+            box-sizing: border-box;
+        }
+
+        .demo07 {
+            background-color: tomato;
+            width: 100%;
+            height: 100%;
+        }
+
+        .demo08 {
+            background-color: rgb(206, 250, 250);
+            padding: 50px;
+            border: 10px solid rgb(1, 80, 80);
+            box-sizing: border-box;
+            margin-bottom: 70px;
+        }
+
+        .demo09 {
+            background-color: rgb(206, 250, 250);
+            padding: 50px;
+            border: 10px solid rgb(1, 26, 26);
+            box-sizing: border-box;
+            margin-top: 50px;
+        }
+
+        .container{
+            background-color: chartreuse;
+            height: unset;
+            width: unset;
+            padding: 1px;
+        }
+
+        .inner{
+            margin-top: 49px;
+            width: unset;
+            height: unset;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="demo01">01</div>
+    <div class="demo02">02</div>
+    <div class="demo03">03</div>
+    <div class="demo04">04</div>
+    <div class="demo05">05</div>
+
+    <div class="demo06">
+        <div class="demo07">07</div>
+    </div>
+
+    <div class="demo08">08</div>
+    <div class="demo09">09</div>
+    <hr>
+
+    <div class="container">
+        <h1>Überschrift</h1>
+        <div class="inner">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, laboriosam.
+        </div>
+    </div>
+</body>
+
+</html>

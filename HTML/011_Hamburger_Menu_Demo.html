@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/M-003-Lab-SVG-Hamburger-Menu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            font-size: 20px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .company-name-container {
+            background-color: #002552;
+            min-height: 200px;
+        }
+
+        .main-nav-container {
+            background-color: #5d858b;
+        }
+
+        .main-nav-container ul {
+            margin: 0;
+            padding-left: 0;
+            list-style-type: none;
+        }
+
+        .main-nav-container a {
+            color: inherit;
+        }
+
+        .main-nav>li {
+            display: inline-block;
+            position: relative;
+            color: #f4f9fc;
+            font-family: 'Open Sans', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 1.2em;
+            padding: .5em 2em 0;
+        }
+
+        .main-nav>li:hover .dropdown-nav {
+            display: block;
+        }
+
+        .main-nav>li>a:hover {
+            color: #002552;
+        }
+
+
+        .dropdown-nav {
+            display: none;
+            position: absolute;
+            background-color: #92c5db;
+            width: 100%;
+        }
+
+        .dropdown-nav>li {
+            padding: .2em 1em;
+        }
+
+        .dropdown-nav>li:hover {
+            background-color: #5d858b;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .main-content-container {
+            background-color: #BEDAE6;
+            min-height: 200px;
+            padding: 2em;
+            /* padding wird später verändert */
+        }
+        .svg-test {
+            width: 25%;
+            height: 100px;
+            background-color: darkorange;
+            padding: 1em;
+        }
+        .svg-test>svg {
+            width: 100%;
+            height: 100%;
+        }
+        .main-footer-container {
+            background-color: #002552;
+            min-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="company-name-container"></header>
+        <nav class="main-nav-container">
+
+            <ul class="main-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Company</a></li>
+                <li>Gallery
+                    <ul class="dropdown-nav">
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Building</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+        <main class="main-content-container">
+
+            <h1>SVG: Hamburger-Menu</h1>
+
+            <svg width="24" height="20">
+                <rect width="24" height="4" fill="#f4f9fc"></rect>
+                <rect x="0" y="8" width="24" height="4" fill="#f4f9fc"></rect>
+                <rect x="0" y="16" width="24" height="4" fill="#f4f9fc"></rect>
+            </svg>
+
+
+            <div class="svg-test">
+                <svg viewBox="0 0 24 20" preserveAspectRatio="none">
+                    <rect width="24" height="4" fill="#f4f9fc"></rect>
+                    <rect x="0" y="8" width="24" height="4" fill="#f4f9fc"></rect>
+                    <rect x="0" y="16" width="24" height="4" fill="#f4f9fc"></rect>
+                </svg>
+            </div>
+        </main>
+        <footer class="main-footer-container"></footer>
+    </div>
+</body>
+
+</html>
